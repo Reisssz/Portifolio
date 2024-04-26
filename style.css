@@ -1,0 +1,400 @@
+
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Define a largura e a altura para o background */
+    width: 100%;
+    height: 100vh;
+    /* Define o background SVG */
+    background-image: url('/imgs/blob-scene-haikei.svg');
+    /* Especifica que o background deve cobrir toda a largura, mantendo a proporção da altura */
+    background-size: 100% auto;
+    /* Especifica que o background deve ser fixado, não rolando com o conteúdo */
+    background-attachment: fixed;
+}
+
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;  
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 7px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(109, 109, 255);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: rgb(109, 109, 255);
+
+}
+
+/*ESTILO DO CABEÇALHO*/
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display:flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+header a{
+    color: #d5cdcd;
+    text-decoration: none;
+    display:inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type:none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+ .btn-contato button:hover{
+    box-shadow:0px 0px 8px #008cff;
+    transform:scale(1.05);
+    
+}
+
+.btn-contato a {
+    display: inline-block;
+}
+
+.btn-contato a i {
+    font-size: 28px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 20px; /* Espaço entre os ícones e o botão */
+    vertical-align: middle;
+}
+
+.btn-contato a:first-child i {
+    transition: color 0.2s; /* Transição de cor ao passar o mouse no primeiro ícone */
+}
+
+.btn-contato a:first-child:hover i{
+    color: #fff; /* Cor do primeiro ícone ao passar o mouse sobre ele */
+    border: 0;
+  }
+
+.btn-contato a:nth-child(2):hover i{
+    transition: color 0.2s; /* Transição de cor ao passar o mouse no segundo ícone */
+}
+
+.btn-contato a:nth-child(2):hover i{
+    color: #fff; /* Cor do segundo ícone ao passar o mouse sobre ele */
+}
+
+
+/*ESTILO DO TOPO DO SITE*/
+section.topo-do-site{
+    padding: 40px 4%;
+};
+
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+color: #fff;
+font-size: 60px;
+line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #008cff;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    width: 300px;
+    margin: 10px 0;
+    margin-left: 80px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow:0px 0px 8px rgb(195, 195, 214);
+}
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*ESTILO DAS SKILLS*/
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.Especialidades .flex{
+    gap: 60px;
+}
+
+ .especialidades-box{
+    color: #fff;
+    padding: 60px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #fff;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+    background-color: #26272864;
+}
+
+.especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 22px rgba(109, 109, 255, 0.541);
+}
+
+.especialidades-box i{
+    font-size:55px;
+    color: rgb(109, 109, 255);
+}
+
+.especialidades-box h3{
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.especialidades-box p{
+    font-size: 18px;
+    margin: 0 0 39px;
+}
+
+.especialidades-box button{
+    background-color: rgb(109, 109, 255);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .1s;
+    width: 110px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.especialidades-box button:hover{
+    box-shadow:0px 0px 17px #8000ff;
+    transform:scale(1.05);
+}
+
+/* Estilos para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Estilos para o track (trilha) da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: rgb(12, 12, 12); /* Cor de fundo da trilha */
+}
+
+/* Estilos para o thumb (alça) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(109, 109, 255); /* Cor da alça da barra de rolagem */
+    border-radius: 6px; /* Borda arredondada para a alça */
+}
+
+/* Estilos para o thumb quando o mouse passa sobre ele */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(109, 109, 255); /* Cor da alça da barra de rolagem ao passar o mouse */
+}
+
+/*ESTILO DA PARTE PROJECTS*/
+section.projects{
+    padding: 80px 4%;
+}
+
+section.projects .flex{
+    justify-content: space-around;
+    margin-top:60px;
+}
+
+.img-port{
+    width: 400px;
+    height: 340px;
+    background-size: cover;
+    background-position: 50% 0%;
+    margin: 15px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.496);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .3s;
+}
+
+.overlay:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 0 22px rgba(127, 100, 221, 0.958);
+}
+
+/*ESTILO DA ABA CONTATO*/
+.about{
+    align-items: center;
+    display: flex;
+    height: 100dvb;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    margin: 0;
+    /* margin-left: 290px; */
+}
+
+.about-img img{
+    width: 40vw;
+    margin-left: -88vh;
+    height: 99dvh;
+}
+
+.about-content h2{
+    font-size: 55px;
+}
+
+.about-content h3{
+    font-size: 25px;
+}
+
+ /*ESTILO DO RODAPÉ  */
+
+ footer{
+    /* padding: 60px 84%; */
+    box-shadow: 0 0 40px 10px #3a3a3c8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ footer button{
+    justify-content: space-between;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(122, 144, 164);
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    top: -40px;
+    font-size: 17px;
+    font-weight: 600;
+ }
+
+ footer button:hover{
+    box-shadow:0px 0px 8px #008cff;
+    transform:scale(1.06);
+    transition: .2s;
+ }
+
+ @media screen and (max-width: 1020px){
+     /* CLASSES GERAIS */
+     .flex{
+        flex-direction: column-reverse;
+     }
+
+    /*CABEÇALHO*/
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    /*TOPO DO SITE*/
+    .topo-do-site h1{
+        font-size: 42px;
+        line-height: 40px;
+        }
+
+        .topo-do-site .img-topo-site img{
+            position: relative;
+            animation: flutuar 2s ease-in-out infinite alternate;
+            width: 300px;
+            margin: 10px 0 50px;
+            margin-left: 30px;
+            margin-top: 0px;
+            height:380px;
+            border-radius: 30px;
+            box-shadow:0px 0px 8px rgb(195, 195, 214);
+        }
+
+        /*PROJETOS*/
+        section.projects .flex{
+            justify-content: space-around;
+            margin-top:60px;
+            align-items: center;
+        }
+
+        section.Especialidades .flex{
+            padding: 20px;
+        }
+        .img-port{
+            width: 360px;
+            height: 340px;
+        }
+            
+
+
+
+}
