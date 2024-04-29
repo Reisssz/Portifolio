@@ -1,6 +1,5 @@
-
 /*ESTILO GERAL*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,79 +19,89 @@ body {
     /* Especifica que o background deve ser fixado, não rolando com o conteúdo */
     background-attachment: fixed;
 }
+
 /* Estilização Loading */
 .preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	animation: spinz 1.35s linear infinite;
-	width: 100%;
-	height: 100%;
-	/* background-color: #ffffff; */
-	background-color: #010016;       /* Change the background color here */
-	z-index: 100;
-  }
-  
-  .loader {
-	border: 16px solid #efeee8;
-	border-top: 16px solid #0026ff;  /* Change the preloader color here */
-	border-radius: 50%;
-	width: 120px;
-	height: 120px;
-	animation: spin 1.35s linear infinite;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -60px;
-	margin-left: -60px;
-  }
-
-  @keyframes spin {
-	0% {
-	  transform: rotate(0deg);
-	  opacity:1;
-	}
-	50% {
-	  transform: rotate(360deg);
-	  opacity:1;
-	}
-	75% {
-	  opacity:1;
-	  transform: rotate(180deg);
-	}
-	100% {
-	  transform: rotate(0deg);
-	  opacity:0;
-	}
-  }
-  
-  @keyframes spinz {
-	0% {
-	  opacity:1;
-	}
-	50% {
-	  opacity:1;
-	}
-	75% {
-	  opacity:1;
-	}
-	100% {
-	  opacity:0;
-	}
-  }
-  /* Fim Estilização Loading */
-
-  
-.interface{
-    max-width: 1280px;
-    margin: 0 auto;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: spinz 1.35s linear infinite;
+    width: 100%;
+    height: 100%;
+    /* background-color: #ffffff; */
+    background-color: #010016;
+    /* Change the background color here */
+    z-index: 100;
 }
 
-.flex{
+.loader {
+    border: 16px solid #efeee8;
+    border-top: 16px solid #0026ff;
+    /* Change the preloader color here */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.35s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+}
+
+@keyframes spinz {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Fim Estilização Loading */
+
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
     display: flex;
 }
 
-.btn-contato button{
+.btn-contato button {
     padding: 7px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -105,54 +114,54 @@ body {
 
 
 
-h2.titulo{
+h2.titulo {
     color: #fff;
     font-size: 38px;
     text-align: center;
 }
 
-h2.titulo span{
+h2.titulo span {
     color: rgb(109, 109, 255);
 
 }
 
 /*ESTILO DO CABEÇALHO*/
-header{
+header {
     padding: 40px 4%;
 }
 
-header > .interface{
-    display:flex;
+header>.interface {
+    display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-header a{
+header a {
     color: #d5cdcd;
     text-decoration: none;
-    display:inline-block;
+    display: inline-block;
     transition: .2s;
 }
 
-header a:hover{
+header a:hover {
     color: #fff;
     transform: scale(1.05);
 }
 
-header nav ul{
-    list-style-type:none;
+header nav ul {
+    list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
 
- .btn-contato button:hover{
-    box-shadow:0px 0px 8px #008cff;
-    transform:scale(1.05);
-    
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #008cff;
+    transform: scale(1.05);
+
 }
 
 .btn-contato a {
@@ -160,64 +169,74 @@ header nav ul li{
 }
 
 .btn-contato a i {
-    font-size: 28px; /* Ajuste o tamanho conforme necessário */
-    margin-right: 20px; /* Espaço entre os ícones e o botão */
+    font-size: 28px;
+    /* Ajuste o tamanho conforme necessário */
+    margin-right: 20px;
+    /* Espaço entre os ícones e o botão */
     vertical-align: middle;
 }
 
 .btn-contato a:first-child i {
-    transition: color 0.2s; /* Transição de cor ao passar o mouse no primeiro ícone */
+    transition: color 0.2s;
+    /* Transição de cor ao passar o mouse no primeiro ícone */
 }
 
-.btn-contato a:first-child:hover i{
-    color: #b678f5; /* Cor do primeiro ícone ao passar o mouse sobre ele */
+.btn-contato a:first-child:hover i {
+    color: #b678f5;
+    /* Cor do primeiro ícone ao passar o mouse sobre ele */
     border: 0;
-  }
-  #icon-github-topo:hover{
-    color: #20013f;
+}
+
+#icon-github-topo:hover {
+    color: #410081;
     transform: scale(1.05);
 
-  }
-  #icon-github-topo{
-    font-size: 33px;
-  }
-
-.btn-contato a:nth-child(2):hover i{
-    transition: color 0.2s;/* Transição de cor ao passar o mouse no segundo ícone */
 }
 
-.btn-contato a:nth-child(2):hover i{
-    color: rgb(10, 102, 194); /* Cor do segundo ícone ao passar o mouse sobre ele */
+#icon-github-topo {
+    font-size: 33px;
+}
+
+.btn-contato a:nth-child(2):hover i {
+    transition: color 0.2s;
+    /* Transição de cor ao passar o mouse no segundo ícone */
+}
+
+.btn-contato a:nth-child(2):hover i {
+    color: rgb(10, 102, 194);
+    /* Cor do segundo ícone ao passar o mouse sobre ele */
 }
 
 
 /*ESTILO DO TOPO DO SITE*/
-section.topo-do-site{
+section.topo-do-site {
     padding: 40px 4%;
-};
+}
 
-section.topo-do-site.flex{
+;
+
+section.topo-do-site.flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.topo-do-site h1{
-color: #fff;
-font-size: 60px;
-line-height: 40px;
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 40px;
 }
 
-.topo-do-site .txt-topo-site h1 span{
+.topo-do-site .txt-topo-site h1 span {
     color: #008cff;
 }
 
-.topo-do-site .txt-topo-site p{
+.topo-do-site .txt-topo-site p {
     color: #fff;
     margin: 40px 0;
 }
 
-.topo-do-site .img-topo-site img{
+.topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     width: 300px;
@@ -225,30 +244,80 @@ line-height: 40px;
     margin-left: 80px;
     height: 400px;
     border-radius: 30px;
-    box-shadow:0px 0px 8px rgb(195, 195, 214);
+    box-shadow: 0px 0px 8px rgb(195, 195, 214);
+}
+
+.link-projeto {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.seta-baixo {
+    display: flex;
+    color: #7b00ff;
+    left: 100px;
+}
+
+#estlz-link-prjt {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    text-decoration: none;
+
+}
+
+a.link-projeto {
+    text-decoration: none;
+    background-color: rgb(109, 109, 255);
+    padding: 12px;
+    border-radius: 40px;
+}
+
+a.link-projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 17px #8000ff;
 }
 
 
-@keyframes flutuar{
-    0%{
+@keyframes flutuar {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
+@keyframes anima {
+    0% {
+        transform: scale(1.07);
+    }
+
+    100% {
+        transform: scale(1.10);
+    }
+
+}
+
 /*ESTILO DAS SKILLS*/
 
-section.especialidades{
+section.especialidades {
     padding: 40px 4%;
 }
 
-section.Especialidades .flex{
+section.Especialidades .flex {
     gap: 60px;
 }
 
- .especialidades-box{
+.especialidades-box {
     color: #fff;
     padding: 60px;
     text-align: center;
@@ -260,27 +329,27 @@ section.Especialidades .flex{
     background-color: #26272864;
 }
 
-.especialidades-box:hover{
+.especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 22px rgba(109, 109, 255, 0.541);
 }
 
-.especialidades-box i{
-    font-size:55px;
+.especialidades-box i {
+    font-size: 55px;
     color: rgb(109, 109, 255);
 }
 
-.especialidades-box h3{
+.especialidades-box h3 {
     font-size: 30px;
     margin: 40px 0;
 }
 
-.especialidades-box p{
+.especialidades-box p {
     font-size: 18px;
     margin: 0 0 39px;
 }
 
-.especialidades-box button{
+.especialidades-box button {
     background-color: rgb(109, 109, 255);
     border: 0;
     border-radius: 30px;
@@ -292,43 +361,48 @@ section.Especialidades .flex{
     font-weight: 600;
 }
 
-.especialidades-box button:hover{
-    box-shadow:0px 0px 17px #8000ff;
-    transform:scale(1.05);
+.especialidades-box button:hover {
+    box-shadow: 0px 0px 17px #8000ff;
+    transform: scale(1.05);
 }
 
 /* Estilos para a barra de rolagem */
 ::-webkit-scrollbar {
-    width: 12px; /* Largura da barra de rolagem */
+    width: 8px;
+    /* Largura da barra de rolagem */
 }
 
 /* Estilos para o track (trilha) da barra de rolagem */
 ::-webkit-scrollbar-track {
-    background-color: rgb(12, 12, 12); /* Cor de fundo da trilha */
+    background-color: rgb(12, 12, 12);
+    /* Cor de fundo da trilha */
 }
 
 /* Estilos para o thumb (alça) da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(109, 109, 255); /* Cor da alça da barra de rolagem */
-    border-radius: 6px; /* Borda arredondada para a alça */
+    background-color: rgb(109, 109, 255);
+    /* Cor da alça da barra de rolagem */
+    border-radius: 6px;
+    /* Borda arredondada para a alça */
 }
 
 /* Estilos para o thumb quando o mouse passa sobre ele */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(109, 109, 255); /* Cor da alça da barra de rolagem ao passar o mouse */
+    background-color: rgb(109, 109, 255);
+    /* Cor da alça da barra de rolagem ao passar o mouse */
 }
 
 /*ESTILO DA PARTE PROJECTS*/
-section.projects{
+section.projects {
     padding: 80px 4%;
 }
 
-section.projects .flex{
+section.projects .flex {
     justify-content: space-around;
-    margin-top:60px;
+    margin-top: 30px;
 }
 
-.img-port{
+.img-port {
     width: 400px;
     height: 340px;
     background-size: cover;
@@ -339,7 +413,7 @@ section.projects .flex{
     position: relative;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -357,14 +431,14 @@ section.projects .flex{
     transition: .3s;
 }
 
-.overlay:hover{
+.overlay:hover {
     opacity: 1;
     transform: scale(1.05);
     box-shadow: 0 0 22px rgba(127, 100, 221, 0.958);
 }
 
 /*ESTILO DA ABA CONTATO*/
-.about{
+.about {
     align-items: center;
     display: flex;
     height: 100dvb;
@@ -375,32 +449,32 @@ section.projects .flex{
     /* margin-left: 290px; */
 }
 
-.about-img img{
+.about-img img {
     width: 40vw;
     margin-left: -88vh;
     height: 99dvh;
 }
 
-.about-content h2{
+.about-content h2 {
     font-size: 55px;
 }
 
-.about-content h3{
+.about-content h3 {
     font-size: 25px;
 }
 
- /*ESTILO DO RODAPÉ  */
+/*ESTILO DO RODAPÉ  */
 
- footer{
+footer {
     /* padding: 60px 84%; */
     box-shadow: 0 0 40px 10px #3a3a3c8b;
     display: flex;
     justify-content: center;
     align-items: center;
-    
- }
 
- footer button{
+}
+
+footer button {
     justify-content: space-between;
     width: 60px;
     height: 60px;
@@ -412,62 +486,110 @@ section.projects .flex{
     top: -40px;
     font-size: 17px;
     font-weight: 600;
- }
+}
 
- footer button:hover{
-    box-shadow:0px 0px 8px #008cff;
-    transform:scale(1.06);
+footer button:hover {
+    box-shadow: 0px 0px 8px #008cff;
+    transform: scale(1.06);
     transition: .2s;
- }
+}
 
- @media screen and (max-width: 1020px){
-     /* CLASSES GERAIS */
-     .flex{
-        flex-direction: column-reverse;
-     }
+@media screen and (max-width: 1020px){
 
-    /*CABEÇALHO*/
-    .menu-desktop, .btn-contato{
-        display: none;
+/* CLASSES GERAIS */
+.flex {
+    flex-direction: column-reverse;
+}
+
+/*CABEÇALHO*/
+.menu-desktop,
+.btn-contato {
+    display: none;
+}
+
+/*TOPO DO SITE*/
+.topo-do-site h1 {
+    font-size: 42px;
+    line-height: 40px;
+}
+
+#link-projeto {
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    padding: 0px 4%;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    width: 300px;
+    margin: 0px 100px 120px 50px;
+    height: 380px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px rgb(195, 195, 214);
+}
+
+section.Especialidades .flex {
+    gap: 60px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#estlz-link-prjt {
+    display: none;
+
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+a.link-projeto {
+    text-decoration: none;
+    background-color: rgb(109, 109, 255);
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+    /*PROJETOS*/
+    section.Especialidades .flex {
+        justify-content: space-around;
+        margin-top: 30px;
+        align-items: center;
     }
-    /*TOPO DO SITE*/
-    .topo-do-site h1{
-        font-size: 42px;
-        line-height: 40px;
-        }
 
-        .topo-do-site .img-topo-site img{
-            position: relative;
-            animation: flutuar 2s ease-in-out infinite alternate;
-            width: 300px;
-            margin: 10px 0 50px;
-            margin-left: 30px;
-            margin-top: 0px;
-            height:380px;
-            border-radius: 30px;
-            box-shadow:0px 0px 8px rgb(195, 195, 214);
-        }
+    section.Especialidades .flex {
+        padding: 20px;
+    }
 
-        /*PROJETOS*/
-        section.projects .flex{
-            justify-content: space-around;
-            margin-top:60px;
-            align-items: center;
-        }
+    .img-port {
+        width: 360px;
+        height: 340px;
+    }
 
-        section.Especialidades .flex{
-            padding: 20px;
-        }
-        .img-port{
-            width: 360px;
-            height: 340px;
-        }
-        .about-content h2,span,#p-final-web{
-            padding: 20px;
-        }
-
-            
-
-
-
+    .about-content h2,
+    span,
+    #p-final-web {
+        padding: 20px;
+    }
+    div.flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
