@@ -14,14 +14,75 @@ body {
     width: 100%;
     height: 100vh;
     /* Define o background SVG */
-    background-image: url('/imgs/blob-scene-haikei.svg');
+    background-color: #011525;
     /* Especifica que o background deve cobrir toda a largura, mantendo a proporção da altura */
     background-size: 100% auto;
     /* Especifica que o background deve ser fixado, não rolando com o conteúdo */
     background-attachment: fixed;
 }
+/* Estilização Loading */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	animation: spinz 1.35s linear infinite;
+	width: 100%;
+	height: 100%;
+	/* background-color: #ffffff; */
+	background-color: #010016;       /* Change the background color here */
+	z-index: 100;
+  }
+  
+  .loader {
+	border: 16px solid #efeee8;
+	border-top: 16px solid #0026ff;  /* Change the preloader color here */
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 1.35s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -60px;
+  }
 
+  @keyframes spin {
+	0% {
+	  transform: rotate(0deg);
+	  opacity:1;
+	}
+	50% {
+	  transform: rotate(360deg);
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	  transform: rotate(180deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	  opacity:0;
+	}
+  }
+  
+  @keyframes spinz {
+	0% {
+	  opacity:1;
+	}
+	50% {
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	}
+	100% {
+	  opacity:0;
+	}
+  }
+  /* Fim Estilização Loading */
 
+  
 .interface{
     max-width: 1280px;
     margin: 0 auto;  
@@ -109,16 +170,24 @@ header nav ul li{
 }
 
 .btn-contato a:first-child:hover i{
-    color: #fff; /* Cor do primeiro ícone ao passar o mouse sobre ele */
+    color: #b678f5; /* Cor do primeiro ícone ao passar o mouse sobre ele */
     border: 0;
+  }
+  #icon-github-topo:hover{
+    color: #20013f;
+    transform: scale(1.05);
+
+  }
+  #icon-github-topo{
+    font-size: 33px;
   }
 
 .btn-contato a:nth-child(2):hover i{
-    transition: color 0.2s; /* Transição de cor ao passar o mouse no segundo ícone */
+    transition: color 0.2s;/* Transição de cor ao passar o mouse no segundo ícone */
 }
 
 .btn-contato a:nth-child(2):hover i{
-    color: #fff; /* Cor do segundo ícone ao passar o mouse sobre ele */
+    color: rgb(10, 102, 194); /* Cor do segundo ícone ao passar o mouse sobre ele */
 }
 
 
@@ -393,6 +462,10 @@ section.projects .flex{
             width: 360px;
             height: 340px;
         }
+        .about-content h2,span,#p-final-web{
+            padding: 20px;
+        }
+
             
 
 
